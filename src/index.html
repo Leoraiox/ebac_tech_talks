@@ -8,19 +8,20 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/main.scss">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
     <header class="hero">
         <div class="container">
             <img class="hero__logo" src="./images/ebac_logo.svg" alt="EBAC">
             <p class="hero__text">
-                O maior evento de tecnologia do Brasil começa dia 10/02, as 12h 20m 15s
+                O maior evento de tecnologia do Brasil começa em <span id="contador"></span>
             </p>
             <div class="infos-bar">
                 <ul class="infos-bar__infos">
                     <li class="infos-bar__infos__item">
                         <b>Localização</b>
-                        Rua 20 - Centro - São Paulo
+                        Rua 20 - Centro - Barretos/SP
                     </li>
                     <li class="infos-bar__infos__item">
                         <b>Preço</b>
@@ -28,7 +29,7 @@
                     </li>
                     <li class="infos-bar__infos__item">
                         <b>Quando</b>
-                        10/02/2022 as 12h 20m 15s
+                        10/12/2022 as 17h 30m 15s
                     </li>
                 </ul>
                 <a href="#" class="button button--primary">
@@ -37,6 +38,53 @@
             </div>
         </div>
     </header>
+
+    <section class="event event--frontend" >
+        <div class="container" data-aos="fade-right">
+            <div class="event__details">
+                <h2 class="event__details__title">Front-End</h2>
+                <p class="event__details__description">
+                    O curso de Front-End, como o oferecido pela EBAC, é projetado para capacitar os alunos com habilidades essenciais no desenvolvimento de interfaces interativas e responsivas para web, utilizando tecnologias como HTML, CSS e JavaScript. Durante o aprendizado, você explora desde conceitos básicos de design até frameworks modernos como React, enquanto desenvolve projetos práticos que simulam cenários reais da tecnologia.
+                </p>
+            </div>
+            <img class="event__image" src="./images/frontend.png" alt="Front-End">
+        </div>
+    </section>
+    <section class="event event--ui-ux event--image-left" >
+        <div class="container" data-aos="fade-left">
+            <div class="event__details">
+                <h2 class="event__details__title">UI/UX</h2>
+                <p class="event__details__description">
+                    UI (User Interface) e UX (User Experience) são áreas complementares que trabalham para criar experiências digitais envolventes e funcionais. O design de UI foca na aparência visual e na interatividade, incluindo botões, ícones, cores e tipografia, garantindo que o usuário tenha uma interface agradável e intuitiva. Já o design de UX se concentra em como o usuário se sente ao navegar por um site ou aplicativo, priorizando acessibilidade, usabilidade e eficiência.
+                </p>
+            </div>
+            <img class="event__image" src="./images/ui-ux.png" alt="UI/UX">
+        </div>
+    </section>
+    <section class="event event--data-science">
+        <div class="container" data-aos="fade-right">
+            <div class="event__details">
+                <h2 class="event__details__title">Data Science</h2>
+                <p class="event__details__description">
+                    Data Science é uma área interdisciplinar que utiliza técnicas estatísticas, matemáticas e computacionais para analisar e interpretar grandes volumes de dados. Com ferramentas como Python, R e SQL, cientistas de dados exploram informações para identificar padrões, prever tendências e tomar decisões informadas. Além disso, a área abrange métodos como aprendizado de máquina, visualização de dados e mineração de dados, permitindo resolver problemas complexos e criar soluções inovadoras em diversos setores, como saúde, finanças e tecnologia.
+                </p>
+            </div>
+            <img class="event__image" src="./images/data.png" alt="Data Science">
+        </div>
+    </section>
+    <section class="event event--backend event--image-left">
+        <div class="container" data-aos="fade-left">
+            <div class="event__details">
+                <h2 class="event__details__title">Back-End</h2>
+                <p class="event__details__description">
+                    O desenvolvimento Back-End é a espinha dorsal de qualquer aplicação web, responsável por toda a lógica, armazenamento de dados e integração com servidores. Utilizando linguagens como Python, Java, PHP ou Node.js, e bancos de dados como MySQL, MongoDB ou PostgreSQL, os desenvolvedores Back-End criam APIs e sistemas que garantem que o front-end funcione de maneira eficiente e segura. Essa área é essencial para quem busca criar sistemas robustos e altamente funcionais.
+                </p>
+            </div>
+            <img class="event__image" src="./images/backend.png" alt="Back-End">
+        </div>
+    </section>
+    
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="scripts/main.js"></script>
 </body>
 </html>
